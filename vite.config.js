@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'app',
+      name: 'back-app',
       remotes: {
         shared: 'http://localhost:5000/assets/shared.js',
       },
@@ -19,7 +19,7 @@ export default defineConfig({
   ],
   preview: {
     host: 'localhost',
-    port: 5001,
+    port: 5003,
     strictPort: true,
   },
   build: {
